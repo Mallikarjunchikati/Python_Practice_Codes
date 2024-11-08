@@ -88,3 +88,12 @@ VALUES
 (4, 4, 'OnePlus 9', '2023-04-28', 729.99),
 (5, 5, 'iPhone 12', '2023-05-18', 699.99);
 
+select * from Information_schema.tables
+
+with newdata As 
+(
+    select * from customers 
+    inner JOIN Plans 
+    on customers.CustomerID = plans.PlanID
+)
+select * from newdata
