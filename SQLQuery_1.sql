@@ -97,3 +97,5 @@ with newdata As
     on C.CustomerID = MD.CustomerID
 )   
 select * from newdata
+
+select * from Transactions
