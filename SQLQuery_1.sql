@@ -98,4 +98,4 @@ with newdata As
 )   
 select * from newdata
 
-select * from Transactions
+select * from Plans
