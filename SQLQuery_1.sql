@@ -92,8 +92,8 @@ select * from Information_schema.tables
 
 with newdata As 
 (
-    select * from customers 
-    inner JOIN Plans 
-    on customers.CustomerID = plans.PlanID
-)
+    select C.FirstName,C.LastName,C.Email,C.Phone,C.Address,C.DateJoined from customers AS C
+    inner JOIN MobileDevices as MD
+    on C.CustomerID = MD.CustomerID
+)   
 select * from newdata
