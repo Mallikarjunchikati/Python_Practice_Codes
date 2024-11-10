@@ -1,6 +1,6 @@
 select * from INFORMATION_SCHEMA.TABLES
 
-select * from Customers
+
 select * from Plans
 select * from Transactions
 select * from MobileDevices
